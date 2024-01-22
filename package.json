@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon",
     "build": "npm install && swc src -d dist --source-maps --copy-files",
-    "start": "NODE_ENV=production node dist/server.js"
+    "start": "NODE_ENV=production node dist/app.js"
   },
   "author": "",
   "license": "ISC",
