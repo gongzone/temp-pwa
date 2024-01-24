@@ -52,7 +52,7 @@ router.post("/reminder", (req: Request, res: Response, next: NextFunction) => {
     }
   }, delay);
 
-  res.status(200).send();
+  res.sendStatus(200);
 });
 
 export { router };
