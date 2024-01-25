@@ -2,8 +2,8 @@ import { Router, Request, Response, NextFunction } from "express";
 import webpush from "web-push";
 
 const VAPID_PUBLIC_KEY =
-  "BKfUaLUf0vzT9Fw6DA60ccIVatk0p_cH1bdAXo2gKi3PTnd5ZlsHP93NR60VTmOg5Uym_BPZY58IdSisDfb7XtE";
-const VAPID_PRIVATE_KEY = "slVRqlnBz57zuWN7IPNHD9BCXFXRUYP3Du-1-Q0VaMw";
+  "BLE6qpPNNgItrRuHo2qJLTqrK4bW0KcdPcrt3W76l8kHqjGxR6Bz13d2V5zXuFIEXUnUH3wF3jUg79PQFEED8ok";
+const VAPID_PRIVATE_KEY = "zaYwkBwnaDQJVzBq497EZTMFm5-68m0tzE_o3I8RLHw";
 
 webpush.setVapidDetails(
   "mailto:emailds-asad@gmail.com",
