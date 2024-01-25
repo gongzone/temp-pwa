@@ -30,7 +30,7 @@ router.post("/reminder", (req: Request, res: Response, next: NextFunction) => {
   let delay = new Date(time).getTime() - new Date().getTime();
 
   if (delay < 0) {
-    return;
+    return res.sendStatus(500);
   }
 
   console.log(subscription);
@@ -52,7 +52,7 @@ router.post("/reminder", (req: Request, res: Response, next: NextFunction) => {
     }
   }, delay);
 
-  res.sendStatus(200);
+  return res.sendStatus(200);
 });
 
 export { router };
