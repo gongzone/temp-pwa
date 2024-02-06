@@ -13,6 +13,11 @@ webpush.setVapidDetails(
 
 const router = Router();
 
+router.post("/token", (req: Request, res: Response, next: NextFunction) => {
+  console.log(req.body.token);
+  res.status(200).send({ message: "success" });
+});
+
 router.get("/vapid-key", (req: Request, res: Response, next: NextFunction) => {
   res.status(200).send({ key: VAPID_PUBLIC_KEY });
 });
